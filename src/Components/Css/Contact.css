@@ -1,0 +1,50 @@
+#contact_section{
+    background: #242B2E;
+    padding-bottom: 170px;
+  }
+  
+  #contact_section .heading{
+    font-weight: 600;
+    font-size: 50px;
+  }
+  
+  #contact_section hr{
+    border: 0.5px solid var(--pink-color);
+    width: 6rem;
+    margin: 12px 0px;
+  }
+  
+  #contact_section .txt{
+    color:var(--secondary-color);
+    font-size: 15px;
+  }
+  
+  #contact_section form .form-control{
+    background: var(--bg-color-for-form-inputs);
+    border: 2px solid var(--bg-color-for-form-inputs);
+    border-radius: 0px;
+    color: white;
+  }
+  
+  #contact_section form button{
+    background-color: var(--pink-color);
+    border:2px solid var(--pink-color);
+    color: white;
+    width: 100px;
+    font-size: 15px;
+  }
+  
+  #contact_section form button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+  }
+  
+  #contact_section ul li{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  
+  #contact_section ul li .fa{
+    color: var(--pink-color);
+  }

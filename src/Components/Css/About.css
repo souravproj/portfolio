@@ -1,0 +1,67 @@
+#about_section {
+    background-color: #120E43;
+    padding: 170px 0px;
+  }
+  
+  #about_section #heading {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    line-height: 57px;
+  }
+  #about_section .lets_talk {
+    color: white;
+    font-weight: 400px;
+  }
+  
+  #about_section #info_gmail {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--pink-color);
+    margin-top: 35px;
+    word-spacing: 6px;
+  }
+  
+  #about_section .contact_info {
+    margin-top: 15px;
+  }
+  #about_section .contact_info h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 6px;
+  }
+  
+  #about_section .about_me_right_section #txt {
+    font-size: 15px;
+    margin-top: 13px;
+    line-height: 25px;
+    color: var(--secondary-color);
+  }
+  
+  #about_section .about_me_right_section hr {
+    margin: 0px;
+    border: 0.5px solid var(--pink-color);
+    width: 6rem;
+  }
+  
+  #about_section .about_me_right_section table td {
+    border: none;
+    color: white;
+    font-size: 13px;
+  }
+  
+  #about_section .about_me_right_section button {
+    border-radius: 7px;
+    font-size: 15px;
+    color: white;
+    background-color: var(--pink-color);
+    border: 3px solid var(--pink-color);
+    font-family: "Poppins", "sans-sarif";
+    margin-top: 10px;
+  }
+  
+  #about_section .about_me_right_section button:hover {
+    animation: swing;
+    animation-duration: 0.5s;
+  }

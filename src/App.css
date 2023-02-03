@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --background-color: #03203c;
+  --pink-color: #e03b8b;
+  --secondary-color: #bbbbbb;
+  --bg-color-of-list-in-skills-section: #81818180;
+  --card-bg-color:#232432;
+  --bg-color-for-form-inputs:#ffffff24;
+  --border-color-for-form-inputs:#c4c4c44a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background-color: var(--background-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+td,
+a {
+  cursor: pointer;
+}
+img {
+  border-radius: 100%;
+}
+canvas.particles-js-canvas-el {
+  position: absolute;
+  height: 100% !important;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1000;
+  margin: 0px;
+}
+@media (max-width: 1200px) and (min-width: 993px) {
+  .hero_section .row h2 {
+    font-size: 58px;
+  }
+}
+@media (max-width: 993px) and (min-width: 763px) {
+  .hero_section .row h2 {
+    font-size: 42px;
+  }
+  .hero_section .row h2 {
+    font-size: 15px;
+  }
+  .hero_section .row p {
+    font-size: 11px;
+  }
+  .hero_section .row h3 {
+    font-size: 15px;
+  }
+  .hero_section .row button {
+    font-size: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 763px) and (min-width: 500px) {
+  .hero_section {
+    margin: 135px 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .hero_section .row h2 {
+    font-size: 46px;
+    text-align: center;
+  }
+  .hero_section .row h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .hero_section .row p {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .hero_section .row h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .hero_section .row h3::after {
+    width: 0px;
+  }
+  .hero_section .row button {
+    font-size: 15px;
+  }
+  .hero_section .btn_container {
+    justify-content: center;
+    text-align: center;
+  }
+  .hero_section .btn_container button {
+    width: 100px;
+    height: 43px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .hero_section img {
+    width: 60%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 993px) and (min-width: 768px) {
+  .about_section .about_me_right_section #txt {
+    font-size: 12px;
+  }
+  .about_section #heading {
+    font-size: 28px !important;
+  }
+}
+@media(max-width:991px) and (min-width: 768px){
+  .contact_section .heading{
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) and (min-width: 500px){
+  .footer-area .links{
+    margin-bottom: 30px;
+  }
+  .footer-area .row .column .heading{
+        font-size: 17px !important;
+  }
+  .portfolio_section .list-group{
+    margin-bottom: 30px;
+  }
+  .portfolio_section .list-group .list-group-item{
+    font-size: 13px;
   }
 }

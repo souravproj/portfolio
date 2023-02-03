@@ -1,0 +1,62 @@
+.footer-area{
+  background: #6A1B4D;
+  border: 2px solid var(--border-color-for-form-inputs);
+  padding: 40px 0px;
+}
+
+.footer-area{
+  font-size: 18px;
+}
+
+.footer-area .navbar-brand{
+  font-size: 23px;
+}
+.footer-area p{
+  margin-top:13px;
+  color: var(--secondary-color);
+  font-size: 12px;
+}
+
+.footer-area .logo-area .fa{
+  color: var(--pink-color);
+  font-size: 17px !important;
+  border: 2px solid var(--pink-color);
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.footer-area .logo-area .fa:hover{
+  animation: swing;
+  background-color: white;
+}
+
+.footer-area .row .column .heading{
+  font-weight: 400 !important;
+  font-size: 21px;
+  color: white;
+}
+.footer-area .list-group .list-group-item{
+
+      margin: -3px 0px;
+      color: white;
+      transition: 0.5s !important;
+
+}
+
+.footer-area .list-group .list-group-item:hover i{
+
+      padding-right: 10px;
+
+}
+
+.footer-area .list-group .list-group-item:hover i{
+
+    font-size: 10px;
+    color: var(--pink-color);
+    transition: 0.5s;
+}
