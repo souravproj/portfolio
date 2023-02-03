@@ -3,7 +3,8 @@ import './Css/About.css'
 
 function About() {
   return (
-    <div id="about_section">
+    <React.Fragment>
+<div id="about_section">
       <div class="container">
         <div class="row m-0">
           <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
@@ -44,6 +45,8 @@ function About() {
         </div>
       </div>
     </div>
+    </React.Fragment>
+    
   )
 }
 
