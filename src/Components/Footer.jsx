@@ -3,6 +3,15 @@ import './Css/Footer.css'
 
 
 function Footer() {
+
+  const skills=['Web Development','Web Design','Machine Learning']
+  const ListOfSkills=skills.map((element)=>{
+    return(
+      <li className="list-group-item border-0 bg-transparent">
+         <i className="fa fa-chevron-right"></i> <span>{element}</span>
+       </li>
+    )
+  })
   return (
     <div className="footer-area">
     <div className="container">
@@ -22,17 +31,8 @@ function Footer() {
        <div className="col-lg-4 col-md-4 col-sm-12 col-12 column">
        <h4 className="heading">Skills<span style={{'color': '#F87652'}}>.</span></h4>
        <ul className="list-group">
-       <li className="list-group-item border-0 bg-transparent">
-         <i className="fa fa-chevron-right"></i> <span>Web Development</span>
-       </li>
-
-       <li className="list-group-item border-0 bg-transparent">
-         <i className="fa fa-chevron-right"></i> <span>Web Design</span>
-       </li>
-
-       <li className="list-group-item border-0 bg-transparent">
-         <i className="fa fa-chevron-right"></i> <span>Machine Learning</span>
-       </li>
+         {ListOfSkills}
+      
        </ul>
        </div>
 

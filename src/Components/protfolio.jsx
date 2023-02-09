@@ -2,6 +2,51 @@ import React from 'react'
 import './Css/protfolio.css'
 
 function protfolio() {
+
+    const images=[
+      {
+        link:'https://souravproj.github.io/Random-Picture-/',
+        img:'assets/img/gallary.png'
+      },
+      {
+        link:'https://souravproj.github.io/Live-Weather-App/',
+        img:'assets/img/weather.png'
+      },
+      {
+        link:'https://souravproj.github.io/Voice-Calculator/',
+        img:'assets/img/Screenshot 2023-01-16 151221.png'
+      }
+    ]
+  
+    const ListOfImages=images.map((element,index)=>{
+      return(
+        <div className="card border-0 padding-0">
+        <a href={element.link}>
+          <img className="card-img-top" src={element.img} alt=""/>
+        </a>
+      
+      </div>
+      )
+    })
+  
+  
+    const fullproj=[
+      {
+        projlink:'https://sourav-news.herokuapp.com/',
+        img:'assets/img/newspaper.png'
+      }
+    ]
+    const ListOffullproj=fullproj.map((link,index)=>{
+      return(
+        <div className="card border-0 padding-0">
+        <a href={link.projlink}>
+          <img className="card-img-top" src={link.img} alt=""/>
+        </a>
+      </div>
+      )
+    })
+
+
   return (
     <div id="portfolio_section">
       <div className="container">
@@ -26,35 +71,16 @@ function protfolio() {
             <div className="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
               <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               <div className="card-columns">
-                <div className="card border-0 padding-0">
-                  <a href=" https://souravproj.github.io/Random-Picture-/">
-                    <img className="card-img-top" src="assets/img/gallary.png" alt=""/>
-                  </a>
-                
-                </div>
-                <div className="card border-0 padding-0">
-                  <a href="https://souravproj.github.io/Live-Weather-App/">
-                    <img className="card-img-top" src="assets/img/weather.png" alt=""/>
-                  </a>
-                </div>
+                {ListOfImages}
 
-                <div className="card border-0 padding-0">
-                  <a href="https://souravproj.github.io/Voice-Calculator/">
-                    <img className="card-img-top" src="assets/img/Screenshot 2023-01-16 151221.png" alt=""/>
-                  </a>
-                </div>
-
+             
                
 
               </div>
               </div>
               <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <div className="card-columns">
-                  <div className="card border-0 padding-0">
-                    <a href="https://sourav-news.herokuapp.com/">
-                      <img className="card-img-top" src="assets/img/newspaper.png" alt=""/>
-                    </a>
-                  </div>
+                  {ListOffullproj}
                   
                   
                 </div>
@@ -71,4 +97,4 @@ function protfolio() {
   )
 }
 
-export default protfolio
+export default protfolio;

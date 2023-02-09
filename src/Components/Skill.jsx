@@ -1,6 +1,27 @@
 import './Css/Skill.css'
 import React from 'react'
  function Skill() {
+  // const skills=['Web Development','JavaScript','React JS','Node JS','Express Js','Mongodb','JAVA']
+   const Semiskills=['web Design','Web Development','Core Java']
+  // const ListOfSkills=skills.map((element)=>{
+  //   return (
+  //     <>
+  //     <span>{element}</span>
+  //             <div className="progress">
+  //               <div className="progress-bar bg-success" role="progressbar" style={{'width': '75%'}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  //             </div>
+  //             </>
+  //   )
+  // })
+
+   const ListOfSemiSkills=Semiskills.map((element)=>{
+      return(
+    <li className="list-group-item">
+       <a>{element}</a>
+  </li>
+      )
+   })
+
   return (
     <div id="skills_section">
     <div className="container">
@@ -12,15 +33,7 @@ import React from 'react'
           <p>I am expertise in <span style={{'color': '#E03B8B'}}>.</span></p>
           <div className="social_media_icons">
             <ul className="list-group">
-              <li className="list-group-item">
-                <a>Web Design</a>
-              </li>
-              <li className="list-group-item">
-                <a>Web Development</a>
-              </li>
-              <li className="list-group-item">
-                <a>Core Java</a>
-              </li>
+             {ListOfSemiSkills}
               
             </ul>
           </div>
