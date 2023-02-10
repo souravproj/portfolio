@@ -1,19 +1,67 @@
 import './Css/Skill.css'
 import React from 'react'
  function Skill() {
-  // const skills=['Web Development','JavaScript','React JS','Node JS','Express Js','Mongodb','JAVA']
-   const Semiskills=['web Design','Web Development','Core Java']
-  // const ListOfSkills=skills.map((element)=>{
-  //   return (
-  //     <>
-  //     <span>{element}</span>
-  //             <div className="progress">
-  //               <div className="progress-bar bg-success" role="progressbar" style={{'width': '75%'}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-  //             </div>
-  //             </>
-  //   )
-  // })
+//    const skills=[
+//      {
+//     name:'Web Development',
+//     width: '75%'
+//   },
+//   {
+//     name:'JavaScript',
+//     width: '60%'
+//   },
+//   {
+//     name:'React JS',
+//     width: '50%'
+//   },
+//   {
+//     name:'Node JS',
+//     width: '50%'
+//   },
+//   {
+//     name:'Express Js',
+//     width: '50%'
+//   },
+//   {
+//     name:'Mongodb',
+//     width: '60%'
+//   },
+//   {
+//     name: 'JAVA',
+//     width: '75%'
+//   }
+// ]
 
+//   const ListOfSkills=skills.map((element,index)=>{
+//     return (
+//       <>
+//       <span>{element.name}</span>
+//               <div className="progress">
+//                 <div className="progress-bar bg-success" role="progressbar" style={{'width': '75%'}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+//               </div>
+//               </>
+//     )
+//   })
+    
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   const Semiskills=['web Design','Web Development','Core Java']
    const ListOfSemiSkills=Semiskills.map((element)=>{
       return(
     <li className="list-group-item">
